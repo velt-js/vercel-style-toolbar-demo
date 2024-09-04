@@ -20,29 +20,39 @@ export class AppComponent {
 	client: any;
 
 	constructor(
-		private veltService: VeltService, private authService: AuthService
+		private veltService: VeltService, 
+		private authService: AuthService
 	) { }
 
+	/**
+	 * Initializes the Velt service and set up the collaboration environment.
+	 */
 	async ngOnInit(): Promise<void> {
-		// Follow the Setup Guide for more info: https://docs.velt.dev/get-started/setup/install
 		
+		// Initialize Velt with the API key
 		await this.veltService.initializeVelt('AN5s6iaYIuLLXul0X4zf');
 
-		const user = this.authService.getUser()(); // Getting Random User
+		// Identify the current user if authenticated
+		const user = this.authService.userSignal();
 		if (user) {
 			await this.veltService.identifyUser(user);
 		}
 
-		await this.veltService.setDocument('toolbar', { documentName: 'toolbar' });
+		// Contain your comments in a document by setting a Document ID & Name
+		this.veltService.setDocument('toolbar', { documentName: 'toolbar' });
+
+		// Enable dark mode for Velt UI
 		this.veltService.setDarkMode(true);
 
 	}
 
+	// Change theme when user clicks on theme button
 	toggleDarkMode() {
 		this.isDarkMode = !this.isDarkMode;
 		this.updateColorScheme();
 	}
 
+	// Update HTML & Velt Color theme 
 	private updateColorScheme() {
 		document.body.style.colorScheme = this.isDarkMode ? 'dark' : 'light';
 		this.veltService.setDarkMode(this.isDarkMode);

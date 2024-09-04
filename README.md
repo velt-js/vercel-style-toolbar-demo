@@ -1,27 +1,45 @@
-# Toolbar
+# Figma Style Commenting in an Website
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.1.
+In this demo, we are using Velt SDK to add Figma style comments on an website / web app
 
-## Development server
+![Sample App Website](sample-app-toolbar.png "Sample Website App")
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Features Used in Demo
 
-## Code scaffolding
+- Commenting (Freestyle Mode)
+- Presence
+- Sidebar
+- Notifications
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Installation
 
-## Build
+To install the Velt Collaboration SDK, you can use npm or yarn. Run one of the following commands in your project directory:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+```zsh
+npm install @veltdev/client
+```
 
-## Running unit tests
+## Docs
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- [Freestyle Comments](https://docs.velt.dev/async-collaboration/comments/setup/freestyle)
+- For everything else read the [documentation](https://docs.velt.dev/get-started/overview) for guides and API References
 
-## Running end-to-end tests
+## Other Links
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Use cases
 
-## Further help
+- [Explore use cases](https://velt.dev/use-case) to learn how collaboration could look like on your product.
+- [Figma Template](https://www.figma.com/community/file/1402312407969730816/velt-collaboration-kit): To visualize what collaboration features could look like on your product.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### Releases
+
+- See the latest changes in our [Release Notes](https://docs.velt.dev/release-notes/).
+
+### Security
+
+- Velt is SOC2 Type 2 and HIPAA compliant. [Learn more](https://velt.dev/security)
+
+### Community
+
+- [X](https://x.com/veltjs): To receive updates, announcements, and general Velt tips.
+- [Discord](https://discord.gg/GupvcYH27h): Join our community to ask questions and share tips. (Less Active)
