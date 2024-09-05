@@ -1,6 +1,6 @@
-# Figma Style Commenting in an Website
+# Figma Style Commenting in Web Apps or Website
 
-In this demo, we are using Velt SDK to add Figma style comments on an website / web app
+In this demo, we are using Velt SDK to add Figma style comments in website / web app
 
 ![Sample App Website](sample-app-toolbar.png "Sample Website App")
 
