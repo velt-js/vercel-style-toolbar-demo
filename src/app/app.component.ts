@@ -4,7 +4,6 @@ import { VeltService } from './services/velt.service';
 import { CommonModule } from '@angular/common';
 import { AuthService } from './services/auth.service';
 
-
 @Component({
 	selector: 'app-root',
 	standalone: true,
