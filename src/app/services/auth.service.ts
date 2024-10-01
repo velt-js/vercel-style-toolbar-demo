@@ -27,7 +27,6 @@ export class AuthService {
 		const storedUser = localStorage.getItem('user');
 		if (storedUser) {
 			this.userSignal.set(JSON.parse(storedUser));
-			console.log(JSON.parse(storedUser));
 		}
 	}
 
@@ -39,12 +38,12 @@ export class AuthService {
 		const randomIndex = Math.floor(Math.random() * GUEST_USERS.length);
 		const randomUser = GUEST_USERS[randomIndex];
 		return {
-			userId: `user${randomIndex}`,
+			userId: randomUser.userId,
 			name: randomUser.name,
-			email: `${randomUser.name.toLowerCase().replace(' ', '.')}@velt.dev`,
+			email: randomUser.email,
 			photoUrl: randomUser.photoUrl,
 			textColor: "#fff",
-			organizationId: "velt-sample-app",
+			organizationId: "examples-default-angular-toolbar",
 		};
 	}
 
