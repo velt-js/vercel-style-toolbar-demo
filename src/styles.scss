@@ -27,3 +27,8 @@ body {
 	--light-text-0: rgba(0, 0, 0, 0.44);
 	--light-text-1: rgba(0, 0, 0, 0.8);
 }
+
+img{
+	user-select: none;
+	pointer-events: none;
+}

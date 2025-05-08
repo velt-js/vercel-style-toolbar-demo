@@ -43,6 +43,7 @@ export class AppComponent {
 		// Enable dark mode for Velt UI
 		this.veltService.setDarkMode(true);
 
+		document.body.style.colorScheme = 'dark';
 	}
 
 	// Change theme when user clicks on theme button
